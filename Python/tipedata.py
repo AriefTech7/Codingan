@@ -36,4 +36,3 @@ print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Diction
 print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
 
 
-print("===casting tipe data===")
