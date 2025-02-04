@@ -26,13 +26,43 @@ kota = {
     'jateng':'bandung'
 }
 
-kota['china'] = 'shanghai'# menambahkan elemen pada dictionary
+# menambahkan elemen pada dictionary
+kota['china'] = 'shanghai'
 print(kota) 
 print(kota['jakarta'])
 
+# mengukur panjang data dictionary kota
 panjang = len(kota)
-print(f"panjang data: {panjang}")# mengukur panjang data dictionary kota
+print(f"panjang data: {panjang}")
 
-KEY = "papua"# mengecek key ada atau tidak
+# mengecek key ada atau tidak
+KEY = "papua"
 check = KEY in kota
 print(check)
+
+
+LENDICT = len(kota)
+print(f"panjang dari dictionary = {LENDICT}")
+
+
+KEY = "smp8"
+ch = KEY in sekolah
+print(f"disini pernyataan = {ch}")
+
+# mengakses value pada dictionary engan get 
+print(sekolah["smp1"])
+print(sekolah.get("smp8"))
+print(sekolah.get("sma", "key tidak ditemukan"))
+
+
+# update value pada dictionary
+kota["china"] = "kota impian"
+print(kota)
+kota.update({"jakarta":"banjir"})
+kota.update({"jateng":"skena abiiz"})
+print(kota)
+
+# delete value pada dictionary
+
+del kota["china"]
+print(kota)
