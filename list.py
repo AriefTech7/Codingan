@@ -228,3 +228,36 @@ while True:
      if lanjut == "n":
           break
 print("PROGRAM SELESAI")
+
+
+# latihan
+
+buah = []
+
+for a in range(5):
+     nama = input(f"masukan nama buah ke-{a+1}\t:")
+     buah.append(nama)
+
+print("Hasil:")
+for ind, nama in enumerate(buah):
+     print(f"index = {ind}, buah = {nama}")
+
+
+kata = ['saya', 'sedang', 'belajar', 'python']
+
+for inx, kt in enumerate(kata):
+     print(f"kata = {kt}, Jumlah karakter = {len(kt)}")
+
+matrix = [
+     [1,2,3],
+     [4,5,6],
+     [7,8,9]
+]
+
+for d, nmr in enumerate(matrix):
+     print(f"baris ke-{d}: {nmr}")
+
+for brs in matrix:
+    for elemen in brs:
+          print(elemen, end=" ")# end ="" -> berfungsi untuk mengatur apa yang akan dioutput
+    print()
