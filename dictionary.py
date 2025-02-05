@@ -2,19 +2,20 @@
 # dan dictionary terdiri dari key and value. Untuk mengakses dictionary kita tinggal memanggil key 
 # untuk menampilkan value##
 
-buah = ['apel', 'mangga', 'pisang', 'jeruk', 'anggur']
+
 
 
 sekolah = {
     'smp1':'latifa',
     'smp8':'timo',
     'smklabor':'arif',
-    'smk':'dewe',
-    "sehat":buah
+    'smk':'dewe'
 }
 
+sekolah['smp7'] = 'fikri'
+print(sekolah)
 print(sekolah['smklabor'])
-print(sekolah['sehat'])
+
 
 # operasi dictionary
 
@@ -66,3 +67,33 @@ print(kota)
 
 del kota["china"]
 print(kota)
+
+
+## looping dictionary
+
+teman_teman = {
+	"cup":"ucup surucup",
+	"tong":"otong surotong",
+	"dung":"dudung surudung",
+	"sep":"asep si kasyep",
+	"cuy":"ucuy surucuy"
+}
+
+# looping first try (yangk keluar adalah keynya)
+for data in teman_teman:
+    print(data)
+
+
+# operator untuk mengambil item/iterables
+keys = teman_teman.keys()
+print(keys)
+
+for key in teman_teman.keys():
+    print(teman_teman.get(key))
+
+value = teman_teman.values()
+print(value)
+
+for key, value in teman_teman.items():
+    print(f"key : {key}, value : {value}")
+
