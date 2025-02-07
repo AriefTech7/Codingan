@@ -97,3 +97,40 @@ print(value)
 for key, value in teman_teman.items():
     print(f"key : {key}, value : {value}")
 
+
+
+# multi keys & nesting dictionary
+
+laptop = {
+    'nama':'thinkpad p15 v3 gen 4',
+    'harga':25000000,
+    'stock':5
+}
+
+mouse = {
+    'nama':'Logitech G903 HERO',
+    'harga':2000000,
+    'stock':10
+}
+
+keyboard = {
+    'nama':'Razer Huntsman V2',
+    'harga':2800000,
+    'stock':15
+}
+
+Headset = {
+    'nama':'Logitech G Pro X Wireless',
+    'harga':2500000,
+    'stock':20
+}
+
+
+barang = {
+    'laptop':laptop,
+    'mouse':mouse,
+    'keyboard':keyboard,
+    'headset':Headset
+}
+
+print(f"berikut adalah peralatan game \n{barang['laptop']}\n{barang['mouse']}\n{barang['keyboard']}\n{barang['headset']}")

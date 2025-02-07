@@ -1,18 +1,18 @@
+nmr = {
+    'satu':10,
+    'dua':20,
+    'tiga':30
+}
 
-list_buku = []
 
-while True:
-     judul = input("masukkan judul buku\t:")
-     penulis = input("masukkan nama penulis\t:")
+nmr['empat'] = 40
+angka = nmr.copy()
+print(f"angka - {angka}")
+print(f"nomor - {nmr}")
 
-     buku = [judul, penulis]
-     list_buku.append(buku)
 
-     for index, buku in enumerate(list_buku, start=1):
-          print(f"{index} | {buku[0]} | {buku[1]}")
+contoh = ["yuda", "sokep", "darwinss", "gupuh"]
 
-     lanjut = input("Apakah lanjut (y/n)")
 
-     if lanjut == "n":
-          break
-print("PROGRAM SELESAI")
+print(f"max = {len(contoh)}")
+print(f"max = {max(nmr)}")
