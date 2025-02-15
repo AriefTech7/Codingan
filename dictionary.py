@@ -1,3 +1,4 @@
+
 ## dictionary -> memiliki workflow yang mirip dengan array, sehingga biasa disebut asosiatif array 
 # dan dictionary terdiri dari key and value. Untuk mengakses dictionary kita tinggal memanggil key 
 # untuk menampilkan value##
