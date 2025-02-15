@@ -1,18 +1,43 @@
+def fungsi(data_list):
+    data = data_list.copy()
+    nama = data[0]
+    kelas = data[1]
+    umur = data[2]
 
-list_buku = []
+    print(f"{nama} adalah siswa dikelas {kelas} dan baru menginjak umur {umur}")
 
-while True:
-     judul = input("masukkan judul buku\t:")
-     penulis = input("masukkan nama penulis\t:")
+fungsi(["andi",12,19])
 
-     buku = [judul, penulis]
-     list_buku.append(buku)
 
-     for index, buku in enumerate(list_buku, start=1):
-          print(f"{index} | {buku[0]} | {buku[1]}")
+def data(*args):
+    nama = args[0]
+    kelas = args[1]
+    umur = args[2]
 
-     lanjut = input("Apakah lanjut (y/n)")
+    print(f"{nama} adalah siswa dikelas {kelas} dan baru menginjak umur {umur}")
 
-     if lanjut == "n":
-          break
-print("PROGRAM SELESAI")
+data("udin",11,18)
+
+
+def proses(*data):
+    nama = data[0]
+    sekolah = data[1]
+    status = data[2]
+    kelas = data[3]
+
+    print(f"{nama} adalah siswa biasa yang bersekolah di smk {sekolah} dan sudah menginjak {kelas} dari smp ia masih berstatus {status}")
+
+proses("wahyu","labor","single",12)
+
+
+def contoh_fungsi(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} = {value}")
+
+contoh_fungsi(nama="John", umur=25, kota="Jakarta")
+
+
+
+
+
+
