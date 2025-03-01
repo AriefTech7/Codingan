@@ -1,2 +1,1 @@
 # Python
-learn to everthing
