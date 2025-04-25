@@ -13,3 +13,6 @@ biner = bool(int(input("masukan nilai bool:")))
 print("data =", biner,"type = ", type(biner))
 
 # ketik alt + klik baris yang mau diubah
+
+your_name = input("what is your nick name?")
+print(your_name)
