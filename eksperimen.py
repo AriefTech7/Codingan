@@ -107,18 +107,20 @@
 
 # print(f"selamat datang di aplikasi ini {username}")
 
-# user = input("give me your user: ")
-# if user == "admin":
-#     print("user accepted")
-#     print("welcome to the hell of university")
-# elif user == "andi":
-#     print("user accepted")
-#     print(f"welcome to world {user}")
-# elif user == "arif":
-#     print("user accepted")
-#     print(f"welcome to home {user}")
-# else:
-#     print("user not accepted")
+user = input("give me your user: ")
+if user == "admin":
+    print("user accepted")
+    print("welcome to the hell of university")
+elif user == "andi":
+    print("user accepted")
+    print(f"welcome to world {user}")
+elif user == "arif":
+    print("user accepted")
+    print(f"welcome to home {user}")
+else:
+    print("user not accepted")
+
+
 
 
 def fungsi(data_list):
@@ -160,6 +162,7 @@ def contoh_fungsi(**kwargs):
 contoh_fungsi(nama="John", umur=25, kota="Jakarta")
 
 
+=======
 def program():
     data_siswa = {
     'nama':'nama',
@@ -203,6 +206,3 @@ def program():
             break
 
 program()
-
-
-
